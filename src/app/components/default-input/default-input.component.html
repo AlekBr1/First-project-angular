@@ -24,8 +24,8 @@
       (click)="togglePasswordVisibility()"
       aria-label="Mostrar ou ocultar senha"
     >
-      <span *ngIf="!showPassword">👁️</span>
-      <span *ngIf="showPassword">🙈</span>
+      <span *ngIf="!showPassword"><i class="fa-solid fa-eye"></i></span>
+      <span *ngIf="showPassword"><i class="fa-solid fa-eye-slash"></i></span>
     </button>
   </div>
 </div>

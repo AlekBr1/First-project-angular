@@ -10,10 +10,11 @@ main {
   border-radius: 10px;
   background-color: #ffffffc3;
   min-width: 30rem;
-  gap: 20px;
+  gap: 10px;
 
   .logo {
-    width: 250px;
+    width: 150px;
+    border-radius: 30%;
   }
 
   h1 {
@@ -62,8 +63,8 @@ main {
 
       &.btn-second {
         border: 2px solid $amarelo;
-        color: $amarelo;
-        background-color: #00000030;
+        color: white;
+        background-color: #000000;
       }
     }
   }

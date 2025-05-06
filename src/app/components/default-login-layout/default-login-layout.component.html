@@ -1,14 +1,28 @@
 <main title="">
-  <img class="logo" src="assets/fiec-logo.png" alt="fiec logo" />
+  <img
+    class="logo"
+    src="assets/fiec-logo.png"
+    alt="fiec logo"
+  />
   <h1>{{ title }}</h1>
   <ng-content></ng-content>
   <div class="buttons">
-    <button class="btn-primary">{{ primiryButtonText }}</button>
+    <button
+      class="btn-primary"
+      (click)="submit()"
+    >
+      {{ primiryButtonText }}
+    </button>
     <div class="or">
       <div class="line"></div>
       <span>OU</span>
       <div class="line"></div>
     </div>
-    <button class="btn-second">{{ secondaryButtonText }}</button>
+    <button
+      class="btn-second"
+      (click)="toggleLogin()"
+    >
+      {{ secondaryButtonText }}
+    </button>
   </div>
 </main>
