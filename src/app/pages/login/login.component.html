@@ -1,0 +1,32 @@
+<div>
+  <img
+    class="img-fundo"
+    src="assets/fiec-frente.jpg"
+    alt="fiec"
+  />
+  <h1>Controle de usuarios com Angular e Java!</h1>
+  <app-default-login-layout
+    title="login"
+    primiryButtonText="Entrar"
+    secondaryButtonText="Registrar-se"
+  >
+  <form [formGroup]="loginForm">
+    <app-default-input
+      formControlName="email"
+      inputName="email"
+      label="E-mail ou Matrícula"
+      type="email"
+      placeholder="Digite seu e-mail"
+    ></app-default-input>
+  
+    <app-default-input
+      formControlName="password"
+      inputName="password"
+      label="Senha"
+      type="password"
+      placeholder="Digite sua senha"
+    ></app-default-input>
+  </form>
+  
+  </app-default-login-layout>
+</div>

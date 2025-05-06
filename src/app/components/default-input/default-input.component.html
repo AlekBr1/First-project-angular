@@ -1,0 +1,31 @@
+<div class="input-wrapper">
+  <label
+    [attr.for]="inputName"
+    class="input-label"
+  >
+    {{ label }}
+  </label>
+  <div class="input-container">
+    <input
+      [id]="inputName"
+      class="input-field"
+      [type]="currentInputType"
+      [placeholder]="placeholder"
+      [attr.name]="inputName"
+      [attr.aria-label]="label"
+      [value]="value"
+      (input)="onInput($event)"
+      (blur)="onTouched()"
+    />
+    <button
+      *ngIf="type === 'password'"
+      type="button"
+      class="toggle-password"
+      (click)="togglePasswordVisibility()"
+      aria-label="Mostrar ou ocultar senha"
+    >
+      <span *ngIf="!showPassword">👁️</span>
+      <span *ngIf="showPassword">🙈</span>
+    </button>
+  </div>
+</div>
