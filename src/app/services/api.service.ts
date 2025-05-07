@@ -5,7 +5,7 @@ import { Injectable } from "@angular/core";
   providedIn: "root",
 })
 export class ApiService {
-  private BASE_URL = "https://api.exemplo.com";
+  private BASE_URL = "http://localhost:8080"; // ou o domínio do seu backend
 
   constructor(private http: HttpClient) {}
 
